@@ -30,7 +30,15 @@ export class AppComponent {
         duration:1,
         scale:1.6,
         ease:'power4.inOut'
-      }, "<" ).to('#image1',{
+      }, "<" ).to('#textBoxes',{
+        duration:1,
+        y:-110,
+        ease:'power4.inOut'
+      }, "<" ).to('#mainBox',{
+        backgroundColor: 'rgb(150 20 35)',
+        duration:1,
+        ease:'power4.inOut'
+      }, "<").to('#image1',{
         duration:1,
         scale:0.5,
         ease:'power4.inOut'
@@ -64,6 +72,14 @@ export class AppComponent {
         duration:1,
         scale:0.5,
         ease:'power4.inOut'
+      }, "<" ).to('#mainBox',{
+        backgroundColor: 'rgb(150 80 35)',
+        duration:1,
+        ease:'power4.inOut'
+      }, "<").to('#textBoxes',{
+        duration:1,
+        y:-210,
+        ease:'power4.inOut'
       }, "<" ).to('#image2',{
         rotate:'-120deg',
         duration:1,
@@ -77,13 +93,7 @@ export class AppComponent {
         filter : 'blur(2px)',
         ease:'power4.inOut'
       }, "-=1.5")
-    } else if (this.counter === 3) {
-      this.tl.to('#circleSlider',{
-        rotate:'280deg',
-        duration : 1,
-        ease:'power4.inOut'
-      })
-    }
+    } 
   }
 
   prevslide(){
@@ -98,7 +108,15 @@ export class AppComponent {
         rotate:'0deg',
         duration:1,
         ease:'power4.inOut'
-      }, "<").to('#image2',{
+      }, "<").to('#mainBox',{
+        backgroundColor: 'rgb(100 116 139)',
+        duration:1,
+        ease:'power4.inOut'
+      }, "<").to('#textBoxes',{
+        duration:1,
+        y:0,
+        ease:'power4.inOut'
+      }, "<" ).to('#image2',{
         duration:1,
         scale:1,
         ease:'power4.inOut'
@@ -131,6 +149,14 @@ export class AppComponent {
       }, "<").to('#image3',{
         duration:1,
         scale:1,
+        ease:'power4.inOut'
+      }, "<" ).to('#mainBox',{
+        backgroundColor: 'rgb(150 20 35)',
+        duration:1,
+        ease:'power4.inOut'
+      }, "<").to('#textBoxes',{
+        duration:1,
+        y:-110,
         ease:'power4.inOut'
       }, "<" ).to('#image2',{
         duration:1,
